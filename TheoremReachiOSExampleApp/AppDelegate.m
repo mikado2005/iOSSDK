@@ -17,9 +17,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [TheoremReach initWithApiKey:@"9148c4176f36f5302eb0a56695eb" userId:@"ExampleUniqueUserID"];
+    
+    [[TheoremReach getInstance] setRewardListenerDelegate:self];
+    
+    [[TheoremReach getInstance] setSurveyListenerDelegate:self];
+    
     return YES;
 }
 
+- (void)onReward: (NSNumber* )quantity {
+    // award user the content!
+    NSLog(@"TheoremReach onReward: %@", quantity);
+}
+
+- (void)onRewardCenterOpened {
+    // reward center opened! Time to take surveys!
+    NSLog(@"TheoremReach onRewardCenterOpened");
+}
+
+- (void)onRewardCenterClosed {
+    // reward center opened! Back to the app to use our coins!
+    NSLog(@"TheoremReach onRewardCenterClosed");
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

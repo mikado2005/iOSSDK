@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <TheoremReachSDK/TheoremReach.h>
 
 @interface ViewController ()
 
@@ -25,5 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)takeSurveyButtonClicked:(id)sender {
+    if ([TheoremReach getInstance].isSurveyAvailable) {
+        [TheoremReach showRewardCenter];
+    }
+}
 
 @end
