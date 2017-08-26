@@ -1,18 +1,19 @@
 # TheoremReach iOS-SDK
-TheoremReach iOS SDK v3.0.0.7
+TheoremReach iOS SDK v3.0.0.9
 
 For additional information, please see the [TheoremReach iOS SDK Integration](https://theoremreach.com/docs/ios).
 
-## v3.0.0.7
-- Updated UI
-- Fixed bug with survey pre-screening
+## v3.0.0.9
+- Updated to WKWebView framework for improved speed and responsiveness
+- Introduced refresh button and updated UI
+- Better handling of page loading errors
 
 #### Cocoapods:
 
 Add the following to your `podfile`
 
   ```groovy
-  pod 'TheoremReach', ‘3.0.0.7’  
+  pod 'TheoremReach', ‘3.0.0.9’  
   ```
 
   #### Manual:

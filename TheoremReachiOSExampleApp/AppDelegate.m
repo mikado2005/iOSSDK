@@ -23,6 +23,8 @@
     
     [[TheoremReach getInstance] setSurveyListenerDelegate:self];
     
+    [[TheoremReach getInstance] setSurveyAvailableDelegate:self];
+    
     return YES;
 }
 
@@ -39,6 +41,15 @@
 - (void)onRewardCenterClosed {
     // reward center opened! Back to the app to use our coins!
     NSLog(@"TheoremReach onRewardCenterClosed");
+}
+
+-(void)theoremreachSurveyAvailable: (BOOL) surveyAvailable {
+    // reward center opened! Back to the app to use our coins!
+    if (surveyAvailable) {
+        NSLog(@"TheoremReach survey available!");
+    } else {
+        NSLog(@"TheoremReach survey not available!");
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
