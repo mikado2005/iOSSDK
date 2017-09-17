@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [TheoremReach initWithApiKey:@"9148c4176f36f5302eb0a56695eb" userId:@"ExampleUniqueUserID"];
-    
+        
     [[TheoremReach getInstance] setRewardListenerDelegate:self];
     
     [[TheoremReach getInstance] setSurveyListenerDelegate:self];
@@ -44,7 +44,6 @@
 }
 
 -(void)theoremreachSurveyAvailable: (BOOL) surveyAvailable {
-    // reward center opened! Back to the app to use our coins!
     if (surveyAvailable) {
         NSLog(@"TheoremReach survey available!");
     } else {
