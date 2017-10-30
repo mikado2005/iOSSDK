@@ -4,9 +4,8 @@ TheoremReach iOS SDK v3.1.5
 For additional information, please see the [TheoremReach iOS SDK Integration](https://theoremreach.com/docs/ios).
 
 ## v3.1.5
-- Updated to WKWebView framework for improved speed and responsiveness
-- Introduced refresh button and updated UI
-- Better handling of page loading errors
+- New Debug Mode for easier integration and callback troubleshooting!
+- General bug fixing
 
 #### Cocoapods:
 
