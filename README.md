@@ -1,5 +1,5 @@
 # TheoremReach iOS-SDK
-TheoremReach iOS SDK v3.1.3
+TheoremReach iOS SDK v3.1.5
 
 For additional information, please see the [TheoremReach iOS SDK Integration](https://theoremreach.com/docs/ios).
 
@@ -13,7 +13,7 @@ For additional information, please see the [TheoremReach iOS SDK Integration](ht
 Add the following to your `podfile`
 
   ```groovy
-  pod 'TheoremReach', ‘3.1.3’  
+  pod 'TheoremReach', ‘3.1.5’  
   ```
 
   #### Manual:
