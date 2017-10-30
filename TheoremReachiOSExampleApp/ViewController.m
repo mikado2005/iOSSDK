@@ -28,6 +28,7 @@
 
 - (IBAction)takeSurveyButtonClicked:(id)sender {
     if ([TheoremReach getInstance].isSurveyAvailable) {
+        [[TheoremReach getInstance] enableDebugMode:YES];
         [TheoremReach showRewardCenter];
     }
 }
