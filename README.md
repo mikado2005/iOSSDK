@@ -4,7 +4,8 @@ TheoremReach iOS SDK v3.1.7
 For additional information, please see the [TheoremReach iOS SDK Integration](https://theoremreach.com/docs/ios).
 
 ## v3.1.7
-- New Debug Mode for easier integration and callback troubleshooting!
+- Improved navigation and look
+- Better support for iOS 11 and iPhone X
 - General bug fixing
 
 #### Cocoapods:
