@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <TheoremReachSDK/TheoremReach.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, TheoremReachRewardDelegate, TheoremReachSurveyDelegate, TheoremReachSurveyAvailableDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, TheoremReachRewardDelegate, TheoremReachSurveyDelegate, TheoremReachSurveyAvailableDelegate, TheoremReachMomentDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
