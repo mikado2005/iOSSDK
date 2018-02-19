@@ -1,10 +1,10 @@
 # TheoremReach iOS-SDK
 
-TheoremReach iOS SDK v3.1.9
+TheoremReach iOS SDK v3.2.1
 
 For additional information, please see the [TheoremReach iOS SDK Integration](https://theoremreach.com/docs/ios).
 
-## v3.1.9
+## v3.2.1
 - Moments Beta Released
 - Improved debug for testing
 - Reset profiler for testing
@@ -15,7 +15,7 @@ For additional information, please see the [TheoremReach iOS SDK Integration](ht
 Add the following to your `podfile`
 
   ```groovy
-  pod 'TheoremReach', ‘3.1.9’  
+  pod 'TheoremReach', ‘3.2.1’  
   ```
 
   #### Manual:
