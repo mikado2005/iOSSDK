@@ -1,18 +1,19 @@
 # TheoremReach iOS-SDK
 
-TheoremReach iOS SDK v3.2.3
+TheoremReach iOS SDK v3.2.4
 
 For additional information, please see the [TheoremReach iOS SDK Integration](https://theoremreach.com/docs/ios).
 
-## v3.2.3
-- Bug fixes
+## v3.2.4
+- You can now style the header to match the look and feel of your app
+- Better debug support
 
 #### Cocoapods:
 
 Add the following to your `podfile`
 
   ```groovy
-  pod 'TheoremReach', ‘3.2.3’  
+  pod 'TheoremReach', ‘3.2.4’
   ```
 
   #### Manual:
