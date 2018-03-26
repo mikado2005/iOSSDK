@@ -337,6 +337,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TheoremReachiOSExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theoremreach.TheoremReachiOSExample;
@@ -355,6 +356,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TheoremReachiOSExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theoremreach.TheoremReachiOSExample;

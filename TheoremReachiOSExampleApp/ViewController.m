@@ -26,18 +26,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)showRewardCenter:(id)sender {
-    if ([TheoremReach getInstance].isSurveyAvailable) {
+
+- (IBAction)launchTheoremReach:(id)sender {
+    if ([[TheoremReach getInstance] isSurveyAvailable]) {
         [TheoremReach showRewardCenter];
     }
-}
-
-- (IBAction)takeSurveyButtonClicked:(id)sender {
-    
-    if ([[TheoremReach getInstance] isSurveyAvailable:[NSNumber numberWithInteger:30]]) {
-        [TheoremReach showMomentSurvey];
-    }
-    
 }
 
 @end

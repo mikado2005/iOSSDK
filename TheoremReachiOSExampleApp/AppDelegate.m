@@ -19,9 +19,6 @@
     // Override point for customization after application launch.
 
     [TheoremReach initWithApiKey:@"9148c4176f36f5302eb0a56695eb" userId:@"ExampleUniqueUserID"];
-    [[TheoremReach getInstance] enableDebugMode:YES];
-    
-    [[TheoremReach getInstance] enableMoments:YES];
         
     [[TheoremReach getInstance] setRewardListenerDelegate:self];
     
@@ -29,7 +26,10 @@
     
     [[TheoremReach getInstance] setSurveyAvailableDelegate:self];
     
-    [[TheoremReach getInstance] setMomentDelegate:self];
+    //customize navigation bar look
+    [TheoremReach getInstance].navigationBarTextColor = @"#FFFFFF";
+    [TheoremReach getInstance].navigationBarText = @"iOS Demo App";
+    [TheoremReach getInstance].navigationBarColor = @"#17b4b3";
     
     return YES;
 }
@@ -81,27 +81,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-
-- (void)onMomentSurveyClosed {
-    NSLog(@"onMomentSurveyClosed");
-}
-
-- (void)onMomentSurveyCompleted {
-    NSLog(@"onMomentSurveyCompleted");
-}
-
-- (void)onMomentSurveyNotEligible {
-    NSLog(@"onMomentSurveyNotEligible");
-}
-
-- (void)onMomentSurveyOpened {
-    NSLog(@"onMomentSurveyOpened");
-}
-
-- (void)onMomentSurveyReceived:(NSNumber *)surveyLength {
-    NSLog(@"onMomentSurveyReceived: %@",surveyLength);
 }
 
 @end
