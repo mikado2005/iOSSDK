@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [TheoremReach initWithApiKey:@"9148c4176f36f5302eb0a56695eb" userId:@"ExampleUniqueUserID"];
+    [TheoremReach initWithApiKey:@"30a936dc7328c6e2bef47c0b1e13" userId:@"ExampleUniqueTestID"];
         
     [[TheoremReach getInstance] setRewardListenerDelegate:self];
     
@@ -26,10 +26,14 @@
     
     [[TheoremReach getInstance] setSurveyAvailableDelegate:self];
     
+    [[TheoremReach getInstance] setMomentDelegate:self];
+    
     //customize navigation bar look
     [TheoremReach getInstance].navigationBarTextColor = @"#FFFFFF";
-    [TheoremReach getInstance].navigationBarText = @"iOS Demo App";
-    [TheoremReach getInstance].navigationBarColor = @"#17b4b3";
+    [TheoremReach getInstance].navigationBarText = @"Demo App";
+    [TheoremReach getInstance].navigationBarColor = @"#211548";
+    
+    [[TheoremReach getInstance] enableMoments:YES];
     
     return YES;
 }
@@ -55,6 +59,26 @@
     } else {
         NSLog(@"TheoremReach survey not available!");
     }
+}
+
+-(void)onMomentSurveyOpened {
+    NSLog(@"onMomentSurveyOpened");
+}
+
+-(void)onMomentSurveyClosed{
+    NSLog(@"onMomentSurveyClosed");
+}
+
+-(void)onMomentSurveyReceived: (NSNumber*) surveyLength{
+    NSLog(@"onMomentSurveyReceived: %@", surveyLength);
+}
+
+-(void)onMomentSurveyCompleted{
+    NSLog(@"onMomentSurveyCompleted");
+}
+
+-(void)onMomentSurveyNotEligible{
+    NSLog(@"onMomentSurveyNotEligible");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

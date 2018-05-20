@@ -31,6 +31,11 @@
     if ([[TheoremReach getInstance] isSurveyAvailable]) {
         [TheoremReach showRewardCenter];
     }
+    
+    // Moments Survey
+//    if ([[TheoremReach getInstance] isSurveyAvailable: [NSNumber numberWithInt:30]]) {
+//        [TheoremReach showMomentSurvey];
+//    }
 }
 
 @end
