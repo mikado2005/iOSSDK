@@ -21,7 +21,6 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -31,11 +30,6 @@
     if ([[TheoremReach getInstance] isSurveyAvailable]) {
         [TheoremReach showRewardCenter];
     }
-    
-    // Moments Survey
-//    if ([[TheoremReach getInstance] isSurveyAvailable: [NSNumber numberWithInt:30]]) {
-//        [TheoremReach showMomentSurvey];
-//    }
 }
 
 @end
