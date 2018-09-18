@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    [TheoremReach initWithApiKey:@"30a936dc7328c6e2bef47c0b1e13" userId:@"23344342252"];
+    [TheoremReach initWithApiKey:@"9148c4176f36f5302eb0a56695eb" userId:@"23344342252"];
         
     [[TheoremReach getInstance] setRewardListenerDelegate:self];
     
@@ -28,7 +28,7 @@
     
     //customize navigation bar look
     [TheoremReach getInstance].navigationBarTextColor = @"#FFFFFF";
-    [TheoremReach getInstance].navigationBarText = @"Demo App";
+    [TheoremReach getInstance].navigationBarText = @"Demo Title";
     [TheoremReach getInstance].navigationBarColor = @"#211548";
     
     return YES;
@@ -51,9 +51,9 @@
 
 -(void)theoremreachSurveyAvailable: (BOOL) surveyAvailable {
     if (surveyAvailable) {
-        NSLog(@"TheoremReach survey available!");
+        NSLog(@"TheoremReach Survey Available!");
     } else {
-        NSLog(@"TheoremReach survey not available!");
+        NSLog(@"TheoremReach Survey Not Available!");
     }
 }
 
