@@ -14,7 +14,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
@@ -25,7 +24,7 @@
     [[TheoremReach getInstance] setSurveyListenerDelegate:self];
     
     [[TheoremReach getInstance] setSurveyAvailableDelegate:self];
-    
+        
     //customize navigation bar look
     [TheoremReach getInstance].navigationBarTextColor = @"#FFFFFF";
     [TheoremReach getInstance].navigationBarText = @"Demo Title";
