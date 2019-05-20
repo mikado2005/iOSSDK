@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723674DF228F2E6F005904AF /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723674DE228F2E6F005904AF /* TheoremReachSDK.framework */; };
+		723674E0228F2E6F005904AF /* TheoremReachSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 723674DE228F2E6F005904AF /* TheoremReachSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7239634F20273F7300702509 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7239634E20273F7300702509 /* ExternalAccessory.framework */; };
 		724E77E61EF14C6500271C2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E77E51EF14C6500271C2F /* main.m */; };
 		724E77E91EF14C6500271C2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E77E81EF14C6500271C2F /* AppDelegate.m */; };
@@ -14,7 +16,6 @@
 		724E77EF1EF14C6500271C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724E77ED1EF14C6500271C2F /* Main.storyboard */; };
 		724E77F11EF14C6500271C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724E77F01EF14C6500271C2F /* Assets.xcassets */; };
 		724E77F41EF14C6500271C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724E77F21EF14C6500271C2F /* LaunchScreen.storyboard */; };
-		724E77FC1EF14C8A00271C2F /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E77FB1EF14C8A00271C2F /* TheoremReachSDK.framework */; };
 		724E77FF1EF14CCE00271C2F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E77FE1EF14CCE00271C2F /* AdSupport.framework */; };
 		724E78011EF14CD700271C2F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E78001EF14CD700271C2F /* CoreTelephony.framework */; };
 		724E78031EF14CDE00271C2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E78021EF14CDE00271C2F /* Foundation.framework */; };
@@ -25,7 +26,22 @@
 		724E780D1EF14D0300271C2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E780C1EF14D0300271C2F /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7250D40C2279F28100E1E1F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				723674E0228F2E6F005904AF /* TheoremReachSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		723674DE228F2E6F005904AF /* TheoremReachSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TheoremReachSDK.framework; sourceTree = "<group>"; };
 		7239634E20273F7300702509 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		7239635020273F7300702509 /* TheoremReachiOSExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheoremReachiOSExampleApp.entitlements; sourceTree = "<group>"; };
 		724E77E11EF14C6500271C2F /* TheoremReachiOSExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheoremReachiOSExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +54,6 @@
 		724E77F01EF14C6500271C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724E77F31EF14C6500271C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724E77F51EF14C6500271C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		724E77FB1EF14C8A00271C2F /* TheoremReachSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TheoremReachSDK.framework; sourceTree = "<group>"; };
 		724E77FE1EF14CCE00271C2F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		724E78001EF14CD700271C2F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		724E78021EF14CDE00271C2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,8 +77,8 @@
 				724E78031EF14CDE00271C2F /* Foundation.framework in Frameworks */,
 				7239634F20273F7300702509 /* ExternalAccessory.framework in Frameworks */,
 				724E78011EF14CD700271C2F /* CoreTelephony.framework in Frameworks */,
+				723674DF228F2E6F005904AF /* TheoremReachSDK.framework in Frameworks */,
 				724E77FF1EF14CCE00271C2F /* AdSupport.framework in Frameworks */,
-				724E77FC1EF14C8A00271C2F /* TheoremReachSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +88,7 @@
 		724E77D81EF14C6500271C2F = {
 			isa = PBXGroup;
 			children = (
-				724E77FB1EF14C8A00271C2F /* TheoremReachSDK.framework */,
+				723674DE228F2E6F005904AF /* TheoremReachSDK.framework */,
 				724E77E31EF14C6500271C2F /* TheoremReachiOSExampleApp */,
 				724E77E21EF14C6500271C2F /* Products */,
 				724E77FD1EF14CCD00271C2F /* Frameworks */,
@@ -139,6 +154,7 @@
 				724E77DD1EF14C6500271C2F /* Sources */,
 				724E77DE1EF14C6500271C2F /* Frameworks */,
 				724E77DF1EF14C6500271C2F /* Resources */,
+				7250D40C2279F28100E1E1F7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +191,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
