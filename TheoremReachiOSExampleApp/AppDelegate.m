@@ -18,7 +18,7 @@
     // Override point for customization after application launch.
 
     [TheoremReach initWithApiKey:@"9148c4176f36f5302eb0a56695eb" userId:@"23344342252"];
-        
+    
     [[TheoremReach getInstance] setRewardListenerDelegate:self];
     
     [[TheoremReach getInstance] setSurveyListenerDelegate:self];
