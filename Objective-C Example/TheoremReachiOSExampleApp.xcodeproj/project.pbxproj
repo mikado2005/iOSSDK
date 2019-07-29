@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		723674DF228F2E6F005904AF /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723674DE228F2E6F005904AF /* TheoremReachSDK.framework */; };
-		723674E0228F2E6F005904AF /* TheoremReachSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 723674DE228F2E6F005904AF /* TheoremReachSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37C7343D22EF4258003CEB93 /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7343C22EF4258003CEB93 /* TheoremReachSDK.framework */; };
+		37C7343E22EF4262003CEB93 /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7343C22EF4258003CEB93 /* TheoremReachSDK.framework */; };
+		37C7343F22EF4262003CEB93 /* TheoremReachSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7343C22EF4258003CEB93 /* TheoremReachSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7239634F20273F7300702509 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7239634E20273F7300702509 /* ExternalAccessory.framework */; };
 		724E77E61EF14C6500271C2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E77E51EF14C6500271C2F /* main.m */; };
 		724E77E91EF14C6500271C2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E77E81EF14C6500271C2F /* AppDelegate.m */; };
@@ -27,13 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7250D40C2279F28100E1E1F7 /* Embed Frameworks */ = {
+		37C7343A22EF4102003CEB93 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				723674E0228F2E6F005904AF /* TheoremReachSDK.framework in Embed Frameworks */,
+				37C7343F22EF4262003CEB93 /* TheoremReachSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		723674DE228F2E6F005904AF /* TheoremReachSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TheoremReachSDK.framework; sourceTree = "<group>"; };
+		37C7343C22EF4258003CEB93 /* TheoremReachSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TheoremReachSDK.framework; sourceTree = "<group>"; };
 		7239634E20273F7300702509 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		7239635020273F7300702509 /* TheoremReachiOSExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheoremReachiOSExampleApp.entitlements; sourceTree = "<group>"; };
 		724E77E11EF14C6500271C2F /* TheoremReachiOSExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheoremReachiOSExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,8 +77,9 @@
 				724E78051EF14CE800271C2F /* JavaScriptCore.framework in Frameworks */,
 				724E78031EF14CDE00271C2F /* Foundation.framework in Frameworks */,
 				7239634F20273F7300702509 /* ExternalAccessory.framework in Frameworks */,
+				37C7343E22EF4262003CEB93 /* TheoremReachSDK.framework in Frameworks */,
 				724E78011EF14CD700271C2F /* CoreTelephony.framework in Frameworks */,
-				723674DF228F2E6F005904AF /* TheoremReachSDK.framework in Frameworks */,
+				37C7343D22EF4258003CEB93 /* TheoremReachSDK.framework in Frameworks */,
 				724E77FF1EF14CCE00271C2F /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +90,7 @@
 		724E77D81EF14C6500271C2F = {
 			isa = PBXGroup;
 			children = (
-				723674DE228F2E6F005904AF /* TheoremReachSDK.framework */,
+				37C7343C22EF4258003CEB93 /* TheoremReachSDK.framework */,
 				724E77E31EF14C6500271C2F /* TheoremReachiOSExampleApp */,
 				724E77E21EF14C6500271C2F /* Products */,
 				724E77FD1EF14CCD00271C2F /* Frameworks */,
@@ -154,7 +156,7 @@
 				724E77DD1EF14C6500271C2F /* Sources */,
 				724E77DE1EF14C6500271C2F /* Frameworks */,
 				724E77DF1EF14C6500271C2F /* Resources */,
-				7250D40C2279F28100E1E1F7 /* Embed Frameworks */,
+				37C7343A22EF4102003CEB93 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,12 +173,12 @@
 		724E77D91EF14C6500271C2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = theoremreach;
 				TargetAttributes = {
 					724E77E01EF14C6500271C2F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = L9K4V5WRGL;
+						DevelopmentTeam = 9DAT7A9Z28;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.WAC = {
@@ -188,10 +190,9 @@
 			};
 			buildConfigurationList = 724E77DC1EF14C6500271C2F /* Build configuration list for PBXProject "TheoremReachiOSExampleApp" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -265,6 +266,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -272,6 +274,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -320,6 +323,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -327,6 +331,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -360,17 +365,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TheoremReachiOSExampleApp/TheoremReachiOSExampleApp.entitlements;
-				DEVELOPMENT_TEAM = L9K4V5WRGL;
+				DEVELOPMENT_TEAM = 9DAT7A9Z28;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TheoremReachiOSExampleApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theoremreach.TheoremReachiOSExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetbeagle.TheoremReachClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -380,17 +385,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TheoremReachiOSExampleApp/TheoremReachiOSExampleApp.entitlements;
-				DEVELOPMENT_TEAM = L9K4V5WRGL;
+				DEVELOPMENT_TEAM = 9DAT7A9Z28;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TheoremReachiOSExampleApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theoremreach.TheoremReachiOSExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetbeagle.TheoremReachClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
