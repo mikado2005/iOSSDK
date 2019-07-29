@@ -1,18 +1,20 @@
 # TheoremReach iOS-SDK
 
-TheoremReach iOS SDK v3.3.5
+TheoremReach iOS SDK v3.6.1
 
 For additional information, please see the [TheoremReach iOS SDK Integration](https://theoremreach.com/docs/ios).
 
-## v3.3.5
-- Addition of placements for additional flexibility
+## v3.6.1
+- Added new Swift Example App
+- Added support for Hot Surveys
+- Updated example apps to demonstrate how to trigger a hot survey via an Apple Push Notification
 
 #### Cocoapods:
 
 Add the following to your `podfile`
 
   ```groovy
-  pod 'TheoremReach', ‘3.3.5’
+  pod 'TheoremReach', ‘3.6.1’
   ```
 
   #### Manual:
