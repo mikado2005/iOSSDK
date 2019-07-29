@@ -109,6 +109,9 @@
 // launches the reward center for a particular placement
 + (void)showRewardCenter: (NSString *)placementId;
 
+// launches a single Hot Survey session
+- (void)showHotSurvey: (NSString *)acuid;
+
 // returns true if a survey is available for a user in their current country
 -(int) unityIsSurveyAvailable;
 
