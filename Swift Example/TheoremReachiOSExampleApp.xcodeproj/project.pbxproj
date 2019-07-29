@@ -11,19 +11,19 @@
 		37C7345722EF42E4003CEB93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C7345522EF42E4003CEB93 /* LaunchScreen.storyboard */; };
 		37C7346122EF43E9003CEB93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7345E22EF43E9003CEB93 /* AppDelegate.swift */; };
 		37C7346322EF43E9003CEB93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7346022EF43E9003CEB93 /* ViewController.swift */; };
-		37C7346B22EF45C0003CEB93 /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7346422EF440F003CEB93 /* TheoremReachSDK.framework */; };
-		37C7346C22EF45C0003CEB93 /* TheoremReachSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7346422EF440F003CEB93 /* TheoremReachSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37C7347022EF4614003CEB93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C7346F22EF4614003CEB93 /* Main.storyboard */; };
+		37C7347B22EF4FE8003CEB93 /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7347722EF4FA5003CEB93 /* TheoremReachSDK.framework */; };
+		37C7347C22EF4FE8003CEB93 /* TheoremReachSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7347722EF4FA5003CEB93 /* TheoremReachSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37C7346D22EF45C0003CEB93 /* Embed Frameworks */ = {
+		37C7347D22EF4FE8003CEB93 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37C7346C22EF45C0003CEB93 /* TheoremReachSDK.framework in Embed Frameworks */,
+				37C7347C22EF4FE8003CEB93 /* TheoremReachSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,9 +37,9 @@
 		37C7345E22EF43E9003CEB93 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C7345F22EF43E9003CEB93 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37C7346022EF43E9003CEB93 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37C7346422EF440F003CEB93 /* TheoremReachSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TheoremReachSDK.framework; path = TheoremReachiOSExampleApp/TheoremReachSDK.framework; sourceTree = "<group>"; };
 		37C7346622EF4494003CEB93 /* TheoremReachiOSExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheoremReachiOSExampleApp.entitlements; sourceTree = "<group>"; };
 		37C7346F22EF4614003CEB93 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		37C7347722EF4FA5003CEB93 /* TheoremReachSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TheoremReachSDK.framework; path = ../TheoremReachSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C7346B22EF45C0003CEB93 /* TheoremReachSDK.framework in Frameworks */,
+				37C7347B22EF4FE8003CEB93 /* TheoremReachSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +57,7 @@
 		37C7344022EF42E4003CEB93 = {
 			isa = PBXGroup;
 			children = (
-				37C7346422EF440F003CEB93 /* TheoremReachSDK.framework */,
+				37C7347722EF4FA5003CEB93 /* TheoremReachSDK.framework */,
 				37C7344B22EF42E4003CEB93 /* TheoremReachiOSExampleApp */,
 				37C7344A22EF42E4003CEB93 /* Products */,
 			);
@@ -95,7 +95,7 @@
 				37C7344522EF42E4003CEB93 /* Sources */,
 				37C7344622EF42E4003CEB93 /* Frameworks */,
 				37C7344722EF42E4003CEB93 /* Resources */,
-				37C7346D22EF45C0003CEB93 /* Embed Frameworks */,
+				37C7347D22EF4FE8003CEB93 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +310,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/TheoremReachiOSExampleApp",
+					..,
 				);
 				INFOPLIST_FILE = TheoremReachiOSExampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,6 +337,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/TheoremReachiOSExampleApp",
+					..,
 				);
 				INFOPLIST_FILE = TheoremReachiOSExampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
