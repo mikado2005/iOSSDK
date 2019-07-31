@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,23 +13,23 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheoremReachClientApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheoremReachiOSExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3U-0D-hbb">
-                                <rect key="frame" x="464.5" y="628" width="95" height="30"/>
+                                <rect key="frame" x="112.5" y="229" width="95" height="30"/>
                                 <state key="normal" title="Take Surveys!"/>
                                 <connections>
-                                    <action selector="openSurveyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OoT-DJ-Lel"/>
+                                    <action selector="openSurveyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GSe-vy-LwC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQa-0f-hyt">
-                                <rect key="frame" x="447.5" y="708" width="129" height="30"/>
+                                <rect key="frame" x="95.5" y="309" width="129" height="30"/>
                                 <state key="normal" title="Open a Hot Survey"/>
                                 <connections>
-                                    <action selector="openHotSurveyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="McQ-uS-7M6"/>
+                                    <action selector="openHotSurveyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y0J-cC-u1y"/>
                                 </connections>
                             </button>
                         </subviews>

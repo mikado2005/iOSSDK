@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370F5E1022F0D7920033E58C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370F5E0F22F0D7920033E58C /* Main.storyboard */; };
 		37C7347522EF4C59003CEB93 /* TheoremReachSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7347322EF4BC4003CEB93 /* TheoremReachSDK.framework */; };
 		37C7347622EF4C59003CEB93 /* TheoremReachSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C7347322EF4BC4003CEB93 /* TheoremReachSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7239634F20273F7300702509 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7239634E20273F7300702509 /* ExternalAccessory.framework */; };
 		724E77E61EF14C6500271C2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E77E51EF14C6500271C2F /* main.m */; };
 		724E77E91EF14C6500271C2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E77E81EF14C6500271C2F /* AppDelegate.m */; };
 		724E77EC1EF14C6500271C2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E77EB1EF14C6500271C2F /* ViewController.m */; };
-		724E77EF1EF14C6500271C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724E77ED1EF14C6500271C2F /* Main.storyboard */; };
 		724E77F11EF14C6500271C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724E77F01EF14C6500271C2F /* Assets.xcassets */; };
 		724E77F41EF14C6500271C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724E77F21EF14C6500271C2F /* LaunchScreen.storyboard */; };
 		724E77FF1EF14CCE00271C2F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E77FE1EF14CCE00271C2F /* AdSupport.framework */; };
@@ -41,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		370F5E0F22F0D7920033E58C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		37C7347322EF4BC4003CEB93 /* TheoremReachSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TheoremReachSDK.framework; path = ../TheoremReachSDK.framework; sourceTree = "<group>"; };
 		7239634E20273F7300702509 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		7239635020273F7300702509 /* TheoremReachiOSExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheoremReachiOSExampleApp.entitlements; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		724E77E81EF14C6500271C2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		724E77EA1EF14C6500271C2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		724E77EB1EF14C6500271C2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		724E77EE1EF14C6500271C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		724E77F01EF14C6500271C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724E77F31EF14C6500271C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724E77F51EF14C6500271C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,12 +106,12 @@
 		724E77E31EF14C6500271C2F /* TheoremReachiOSExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				370F5E0F22F0D7920033E58C /* Main.storyboard */,
 				7239635020273F7300702509 /* TheoremReachiOSExampleApp.entitlements */,
 				724E77E71EF14C6500271C2F /* AppDelegate.h */,
 				724E77E81EF14C6500271C2F /* AppDelegate.m */,
 				724E77EA1EF14C6500271C2F /* ViewController.h */,
 				724E77EB1EF14C6500271C2F /* ViewController.m */,
-				724E77ED1EF14C6500271C2F /* Main.storyboard */,
 				724E77F01EF14C6500271C2F /* Assets.xcassets */,
 				724E77F21EF14C6500271C2F /* LaunchScreen.storyboard */,
 				724E77F51EF14C6500271C2F /* Info.plist */,
@@ -179,6 +179,12 @@
 						DevelopmentTeam = 9DAT7A9Z28;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.WAC = {
 								enabled = 1;
 							};
@@ -210,8 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				724E77F41EF14C6500271C2F /* LaunchScreen.storyboard in Resources */,
+				370F5E1022F0D7920033E58C /* Main.storyboard in Resources */,
 				724E77F11EF14C6500271C2F /* Assets.xcassets in Resources */,
-				724E77EF1EF14C6500271C2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,14 +237,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		724E77ED1EF14C6500271C2F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				724E77EE1EF14C6500271C2F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		724E77F21EF14C6500271C2F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,7 +372,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.planetbeagle.TheoremReachClientApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetbeagle.TheoremReachObjcClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -395,7 +393,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.planetbeagle.TheoremReachClientApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.planetbeagle.TheoremReachObjcClientApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import <UserNotifications/UserNotifications.h>
 
 @interface AppDelegate ()
 
@@ -29,6 +31,9 @@
     [TheoremReach getInstance].navigationBarTextColor = @"#FFFFFF";
     [TheoremReach getInstance].navigationBarText = @"Demo Title";
     [TheoremReach getInstance].navigationBarColor = @"#211548";
+    
+    // If desired, register to receive Apple Push Notifications
+    [self registerForPushNotifications];
     
     return YES;
 }
@@ -80,6 +85,72 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+// MARK: Remote notifications
+
+NSString *apnDeviceTokenKey = @"apnDeviceToken";
+
+- (void)registerForPushNotifications {
+    [[UNUserNotificationCenter currentNotificationCenter]
+        requestAuthorizationWithOptions:(
+            UNAuthorizationOptionAlert +
+            UNAuthorizationOptionSound +
+            UNAuthorizationOptionBadge)
+        completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if (granted) {
+                NSLog(@"Apple Push Notifications: Permission GRANTED");
+            }
+            else {
+                NSLog(@"Apple Push Notifications: Permission REFUSED");
+                return;
+            }
+            [self getNotificationSettings];
+        }
+     ];
+}
+
+- (void) getNotificationSettings {
+    [[UNUserNotificationCenter currentNotificationCenter] getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+        if (settings.authorizationStatus != UNAuthorizationStatusAuthorized) return;
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            [[UIApplication sharedApplication] registerForRemoteNotifications];
+        });
+    }];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    const unsigned *tokenBytes = [deviceToken bytes];
+    NSString *token = [NSString
+                       stringWithFormat:@"%08x%08x%08x%08x%08x%08x%08x%08x",
+                          ntohl(tokenBytes[0]), ntohl(tokenBytes[1]), ntohl(tokenBytes[2]),
+                          ntohl(tokenBytes[3]), ntohl(tokenBytes[4]), ntohl(tokenBytes[5]),
+                          ntohl(tokenBytes[6]), ntohl(tokenBytes[7])];
+    NSLog(@"Apple Push Notifications: Device Token: %@", token);
+    
+    // OPTIONAL: Save the APN device token in defaults file
+    [[NSUserDefaults standardUserDefaults] setObject:token forKey:apnDeviceTokenKey];
+
+    // This is a good place to update the user's APNS DeviceToken on the remote server!
+}
+
+- (void)application:(UIApplication *)application
+        didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog (@"Apple Push Notifications: Failed to register: %@", error);
+}
+
+- (void)application:(UIApplication *)application
+        didReceiveRemoteNotification:(NSDictionary *)userInfo
+        fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
+    NSLog(@"**** didReceiveRemoteNotification");
+    NSString *acuid = [userInfo valueForKey:@"acuid"];
+    if (acuid) {
+        ViewController *rvc = (ViewController *) [
+            [(AppDelegate*) [[UIApplication sharedApplication] delegate] window]
+            rootViewController];
+        [rvc openHotSurvey:acuid];
+    }
+    completionHandler(UIBackgroundFetchResultNewData);
 }
 
 @end

@@ -11,19 +11,19 @@ openssl=/usr/local/opt/openssl/bin/openssl
 # Some required inputs:
 
 # The APNs device token of the user's iPhone
-deviceToken=611bbaf643aa2607ba37b2bc94afbe92d08404b981f431bb6d160c6f0263e2ab
+deviceToken=e4a7d56419e653d545a3175f616a32fa90af3e7887eaac458167887f4db3fc4b
 
 # The *.p8 file containing your APNs Key
-authKey="./MyOrgsAPNsAuthenticationKey.p8"
+authKey="../../TheoremReachObjcClientApp_APNsAuthKey_ID_4FY5D6W93J.p8"
 
 # The ID # of the APNs key
-authKeyId=27BTQ6933M
+authKeyId=4FY5D6W93J
 
 # Your app's Apple team ID
 teamId=9DAT7A9Z28
 
 # Your app's Bundle Identifier
-bundleId=com.planetbeagle.TheoremReachiOSExampleApp
+bundleId=com.planetbeagle.TheoremReachObjcClientApp
 # --------------------------------------------------------------------------
 
 appleEndpoint=https://api.development.push.apple.com

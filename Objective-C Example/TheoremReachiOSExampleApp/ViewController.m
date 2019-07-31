@@ -9,30 +9,29 @@
 #import "ViewController.h"
 #import <TheoremReachSDK/TheoremReach.h>
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)openSurveyButton: (id)sender {
+    [self openRewardsCenter];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)openHotSurveyButton: (id)sender {
+    [self openHotSurvey:@"0bb25f4d-6579-4218-bb5f-202f6db32972"];
 }
 
-- (IBAction)launchTheoremReach:(id)sender {
+- (void)openRewardsCenter {
     if ([[TheoremReach getInstance] isSurveyAvailable]) {
         //placement example for additional targeting
-//        [TheoremReach showRewardCenter:@"be4aa618-3c11-498a-92f9-43bb01f2a4c9"];
-        
+        //        [TheoremReach showRewardCenter:@"be4aa618-3c11-498a-92f9-43bb01f2a4c9"];
         [TheoremReach showRewardCenter];
     }
 }
+
+- (void)openHotSurvey: (NSString *)acuid {
+    if ([acuid length] < 1) { return; }
+    TheoremReach *theoremReach = [TheoremReach getInstance];
+    if (theoremReach == nil) { return; }
+    [theoremReach showHotSurvey:acuid];
+ }
 
 @end
